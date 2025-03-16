@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between mb-3">
+    <h1 class="text-center flex-grow-1">Firme</h1>
+    <div>
+      <b><a href="http://localhost:4200/ownerMeni" class="btn btn-link">Meni</a></b>
+    </div>
+  </div>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>
+          <div class="d-flex align-items-center">
+            <span>Naziv</span>
+            <button class="btn btn-link p-0 ml-2" (click)="sortNameUp()">↑</button>
+            <button class="btn btn-link p-0 ml-1" (click)="sortNameDown()">↓</button>
+            <input type="text" class="form-control ml-2" [(ngModel)]="searchName" placeholder="Pretraga naziva">
+          </div>
+        </th>
+        <th>
+          <div class="d-flex align-items-center">
+            <span>Adresa</span>
+            <button class="btn btn-link p-0 ml-2" (click)="sortAddressUp()">↑</button>
+            <button class="btn btn-link p-0 ml-1" (click)="sortAddressDown()">↓</button>
+            <input type="text" class="form-control ml-2" [(ngModel)]="searchAddress" placeholder="Pretraga adrese">
+          </div>
+        </th>
+        <th>Zaposleni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let firm of firms | filtrer: 'name' : searchName | filtrer: 'address' : searchAddress">
+        <td>
+          <p (click)="info(firm.name)" class="text-primary" style="cursor: pointer; text-decoration: underline;">
+            {{ firm.name }}
+          </p>
+        </td>
+        <td>{{ firm.address }}</td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li *ngFor="let worker of firm.decorators">
+              {{ worker.firstname }} {{ worker.lastname }}
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

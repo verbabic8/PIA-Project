@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-end mb-3">
+    <b><a href="http://localhost:4200/changePassword" class="btn btn-link">Promena lozinke</a></b>
+  </div>
+    <h2 class="text-center">Login</h2>
+    <div class="form-group">
+      <label for="username">Korisnicko ime:</label>
+      <input type="text" id="username" class="form-control" [(ngModel)]="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" class="form-control" [(ngModel)]="password">
+    </div>
+    <button class="btn btn-primary" (click)="login()">Uloguj se</button>
+    <p class="text-danger mt-3">{{error}}</p>
+  </div>

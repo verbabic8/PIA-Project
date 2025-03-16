@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between mb-3">
+    <h1 class="text-center flex-grow-1">Statistika</h1>
+    <div>
+      <b><a href="http://localhost:4200/decoratorMeni" class="btn btn-link">Meni</a></b>
+    </div>
+  </div>
+
+  <!-- Дијаграм са колонама/баровима -->
+  <div class="card mb-4">
+    <div class="card-header">
+      <h3 class="card-title">Број послова по месецима</h3>
+    </div>
+    <div class="card-body">
+      <canvas #barChart></canvas>
+    </div>
+  </div>
+
+  <!-- Дијаграм „пита“ -->
+  <div class="card mb-4">
+    <div class="card-header">
+      <h3 class="card-title">Расподела послова међу декоратерима</h3>
+    </div>
+    <div class="card-body">
+      <canvas #pieChart></canvas>
+    </div>
+  </div>
+
+  <!-- Хистограм -->
+  <div class="card mb-4">
+    <div class="card-header">
+      <h3 class="card-title">Послови по данима у недељи</h3>
+    </div>
+    <div class="card-body">
+      <canvas #histogramChart></canvas>
+    </div>
+  </div>
+</div>

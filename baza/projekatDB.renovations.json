@@ -1,0 +1,533 @@
+[{
+  "_id": {
+    "$oid": "66f0016900af232b13ace5a8"
+  },
+  "date": {
+    "$date": "2024-09-29T11:36:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-22T11:37:13.268Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-22T11:36:15.416Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-22T11:36:15.416Z"
+  },
+  "area": 100,
+  "type": "private",
+  "poolArea": 30,
+  "greenArea": 50,
+  "tableArea": 20,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 30000,
+      "_id": {
+        "$oid": "66ef225310286c60cadce373"
+      }
+    },
+    {
+      "name": "uredjivanje zelenila",
+      "price": 7500,
+      "_id": {
+        "$oid": "66ef225310286c60cadce375"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "andja",
+  "decorator": "",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f001c700af232b13ace5e5"
+  },
+  "date": {
+    "$date": "2024-09-25T11:38:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-22T11:38:47.200Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T11:38:06.775Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T11:38:06.775Z"
+  },
+  "area": 200,
+  "type": "restaurant",
+  "poolArea": 0,
+  "greenArea": 100,
+  "tableArea": 0,
+  "fountainArea": 30,
+  "tables": 7,
+  "chairs": 35,
+  "usluge": [
+    {
+      "name": "renoviranje fontane",
+      "price": 10000,
+      "_id": {
+        "$oid": "66ef225310286c60cadce374"
+      }
+    },
+    {
+      "name": "izgradnja i obnova terase",
+      "price": 15000,
+      "_id": {
+        "$oid": "66ef225310286c60cadce376"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "gaja",
+  "decorator": "",
+  "poolCnt": 0,
+  "fountainCnt": 2,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f0022b00af232b13ace604"
+  },
+  "date": {
+    "$date": "2024-09-26T11:40:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-22T11:40:27.277Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T11:39:57.722Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T11:39:57.722Z"
+  },
+  "area": 150,
+  "type": "private",
+  "poolArea": 30,
+  "greenArea": 60,
+  "tableArea": 60,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 30000,
+      "_id": {
+        "$oid": "66ef225310286c60cadce373"
+      }
+    },
+    {
+      "name": "uredjivanje zelenila",
+      "price": 7500,
+      "_id": {
+        "$oid": "66ef225310286c60cadce375"
+      }
+    },
+    {
+      "name": "izgradnja i obnova terase",
+      "price": 15000,
+      "_id": {
+        "$oid": "66ef225310286c60cadce376"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "joca",
+  "decorator": "",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f035af55a17d2a4100b975"
+  },
+  "date": {
+    "$date": "2022-10-22T15:19:00.000Z"
+  },
+  "now": {
+    "$date": "2022-09-22T15:20:15.845Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T15:42:40.210Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T15:42:40.210Z"
+  },
+  "area": 100,
+  "type": "private",
+  "poolArea": 20,
+  "greenArea": 60,
+  "tableArea": 20,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 28000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b935"
+      }
+    },
+    {
+      "name": "renoviranje terase",
+      "price": 19000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b937"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": true,
+  "username": "andja",
+  "decorator": "daca",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f035d855a17d2a4100b99c"
+  },
+  "date": {
+    "$date": "2022-10-24T15:20:00.000Z"
+  },
+  "now": {
+    "$date": "2022-09-22T15:20:56.293Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T15:20:23.504Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T15:20:23.504Z"
+  },
+  "area": 200,
+  "type": "restaurant",
+  "poolArea": 0,
+  "greenArea": 100,
+  "tableArea": 0,
+  "fountainArea": 30,
+  "tables": 8,
+  "chairs": 40,
+  "usluge": [
+    {
+      "name": "renoviranje fontane",
+      "price": 18000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b936"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "andja",
+  "decorator": "daca",
+  "poolCnt": 0,
+  "fountainCnt": 3,
+  "status": "accepted",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1449f2492e180ae8aa877"
+  },
+  "date": {
+    "$date": "2024-09-28T10:35:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:36:15.099Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:35:43.937Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:35:43.937Z"
+  },
+  "area": 160,
+  "type": "private",
+  "poolArea": 40,
+  "greenArea": 60,
+  "tableArea": 60,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 28000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b935"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "joca",
+  "decorator": "",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f144c42492e180ae8aa89d"
+  },
+  "date": {
+    "$date": "2024-10-31T11:36:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:36:52.660Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:36:19.549Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:36:19.549Z"
+  },
+  "area": 150,
+  "type": "restaurant",
+  "poolArea": 0,
+  "greenArea": 100,
+  "tableArea": 0,
+  "fountainArea": 30,
+  "tables": 7,
+  "chairs": 28,
+  "usluge": [
+    {
+      "name": "renoviranje fontane",
+      "price": 18000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b936"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "joca",
+  "decorator": "",
+  "poolCnt": 0,
+  "fountainCnt": 2,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1450f2492e180ae8aa8d7"
+  },
+  "date": {
+    "$date": "2024-10-25T10:37:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:38:07.398Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:37:34.984Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:37:34.984Z"
+  },
+  "area": 110,
+  "type": "private",
+  "poolArea": 60,
+  "greenArea": 25,
+  "tableArea": 25,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 28000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b935"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "gaja",
+  "decorator": "",
+  "poolCnt": 2,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f1453c2492e180ae8aa8fd"
+  },
+  "date": {
+    "$date": "2024-11-21T11:38:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:38:51.999Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:38:18.593Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:38:18.593Z"
+  },
+  "area": 300,
+  "type": "restaurant",
+  "poolArea": 0,
+  "greenArea": 100,
+  "tableArea": 0,
+  "fountainArea": 30,
+  "tables": 10,
+  "chairs": 40,
+  "usluge": [
+    {
+      "name": "renoviranje fontane",
+      "price": 18000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b936"
+      }
+    },
+    {
+      "name": "renoviranje terase",
+      "price": 19000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b937"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "gaja",
+  "decorator": "",
+  "poolCnt": 0,
+  "fountainCnt": 3,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f145a32492e180ae8aa925"
+  },
+  "date": {
+    "$date": "2024-12-18T11:40:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:40:35.371Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:40:04.971Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:40:04.971Z"
+  },
+  "area": 130,
+  "type": "private",
+  "poolArea": 30,
+  "greenArea": 50,
+  "tableArea": 50,
+  "fountainArea": 0,
+  "tables": 0,
+  "chairs": 0,
+  "usluge": [
+    {
+      "name": "renoviranje bazena",
+      "price": 28000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b935"
+      }
+    },
+    {
+      "name": "renoviranje terase",
+      "price": 19000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b937"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "andja",
+  "decorator": "",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "comment": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f145c52492e180ae8aa94c"
+  },
+  "date": {
+    "$date": "2024-12-27T11:40:00.000Z"
+  },
+  "now": {
+    "$date": "2024-09-23T10:41:09.180Z"
+  },
+  "finishDate": {
+    "$date": "2024-09-23T10:40:38.565Z"
+  },
+  "lastVisit": {
+    "$date": "2024-09-23T10:40:38.565Z"
+  },
+  "area": 250,
+  "type": "restaurant",
+  "poolArea": 0,
+  "greenArea": 150,
+  "tableArea": 0,
+  "fountainArea": 20,
+  "tables": 8,
+  "chairs": 32,
+  "usluge": [
+    {
+      "name": "renoviranje fontane",
+      "price": 18000,
+      "_id": {
+        "$oid": "66f0351955a17d2a4100b936"
+      }
+    }
+  ],
+  "text": "",
+  "firm": "Firma 3",
+  "finished": false,
+  "username": "andja",
+  "decorator": "daca",
+  "poolCnt": 0,
+  "fountainCnt": 2,
+  "status": "accepted",
+  "comment": "",
+  "__v": 0
+}]

@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+      <h1 class="text-center flex-grow-1">Profil</h1>
+      <div>
+        <b><a href="http://localhost:4200/changePassword" class="btn btn-link">Promena lozinke</a></b>
+        <b><a href="http://localhost:4200/ownerMeni" class="btn btn-link">Meni</a></b>
+      </div>
+    </div>
+    <div class="form-group">
+      <label><b>Profilna slika:</b></label> <br>
+      <img *ngIf="user.picture" [src]="user.picture" class="img-thumbnail" width="150"> <br>
+      <input type="file" class="form-control-file mt-2" (change)="onFileSelected($event)">
+    </div>
+    <div class="form-group">
+      <label><b>Ime i prezime:</b></label>
+      <div class="d-flex">
+        <input type="text" [(ngModel)]="user.firstname" class="form-control mr-2" placeholder="Ime">
+        <input type="text" [(ngModel)]="user.lastname" class="form-control" placeholder="Prezime">
+      </div>
+    </div>
+    <div class="form-group">
+      <label><b>Adresa:</b></label>
+      <input type="text" [(ngModel)]="user.address" class="form-control" placeholder="Adresa">
+    </div>
+    <div class="form-group">
+      <label><b>E-mail:</b></label>
+      <input type="text" [(ngModel)]="user.email" class="form-control" placeholder="E-mail">
+    </div>
+    <div class="form-group">
+      <label><b>Telefon:</b></label>
+      <input type="text" [(ngModel)]="user.phone" class="form-control" placeholder="Telefon">
+    </div>
+    <div class="form-group">
+      <label><b>Kreditna kartica:</b></label>
+      <input type="text" [(ngModel)]="user.card" class="form-control" placeholder="Kreditna kartica">
+    </div>
+    <button class="btn btn-primary" (click)="update()">Azuriraj</button>
+    <br />
+    <p class="text-danger mt-3">{{error}}</p>
+  </div>

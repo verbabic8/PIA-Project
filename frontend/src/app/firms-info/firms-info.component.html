@@ -1,0 +1,140 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between mb-3">
+    <h1 class="text-center flex-grow-1">Firma info:</h1>
+    <div>
+      <b><a href="http://localhost:4200/ownerMeni" class="btn btn-link">Meni</a></b>
+    </div>
+  </div>
+        <div class="mb-4">
+          <p><b>Naziv: </b>{{firm.name}}</p>
+          <p><b>Adresa: </b>{{firm.address}}</p>
+          <p><b>Telefon: </b>{{firm.phone}}</p>
+          <p><b>Usluge: </b></p>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let usluga of firm.usluge">
+              {{usluga.name}} - {{usluga.price}}din
+            </li>
+          </ul>
+        </div>
+      
+        <h3 class="mb-4">Zakazite uredjivanje baste:</h3>
+        <div *ngIf="step == 1" class="mb-4">
+          <div class="form-group">
+            <label for="datetime">Datum i vreme:</label>
+            <input type="datetime-local" id="datetime" name="datetime" class="form-control" [(ngModel)]="renovation.date">
+          </div>
+          <div class="form-group">
+            <label for="area">Kvadratura[m²]:</label>
+            <input type="number" id="area" class="form-control" [(ngModel)]="renovation.area">
+          </div>
+          <div class="form-group">
+            <label>Vrsta baste:</label><br>
+            <div class="form-check form-check-inline">
+              <input type="radio" id="private" class="form-check-input" name="garden" value="private" [(ngModel)]="renovation.type">
+              <label for="private" class="form-check-label">Privatna</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" id="restaurant" class="form-check-input" name="garden" value="restaurant" [(ngModel)]="renovation.type">
+              <label for="restaurant" class="form-check-label">Restoranska</label>
+            </div>
+          </div>
+          <button class="btn btn-primary" (click)="nextStep()">Sledeci korak</button>
+          <p class="text-danger mt-3">{{error}}</p>
+        </div>
+      
+        <div *ngIf="step == 2" class="mb-4">
+          <div class="form-group">
+            <label for="poolCnt">Broj bazena:</label>
+            <input type="number" id="poolCnt" class="form-control" [(ngModel)]="renovation.poolCnt">
+          </div>
+          <div class="form-group">
+            <label for="poolArea">Povrsina pod bazenom[m²]:</label>
+            <input type="number" id="poolArea" class="form-control" [(ngModel)]="renovation.poolArea">
+          </div>
+          <div class="form-group">
+            <label for="greenArea">Povrsina pod zelenilom[m²]:</label>
+            <input type="number" id="greenArea" class="form-control" [(ngModel)]="renovation.greenArea">
+          </div>
+          <div class="form-group">
+            <label for="tableArea">Povrsina pod lezaljkama i stolicama[m²]:</label>
+            <input type="number" id="tableArea" class="form-control" [(ngModel)]="renovation.tableArea">
+          </div>
+          <div class="form-group">
+            <label>Usluge:</label>
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let usluga of usluge">
+                <div class="form-check">
+                  <input type="checkbox" id="usluga{{usluga.Usluga.name}}" class="form-check-input" [(ngModel)]="usluga.boolean">
+                  <label for="usluga{{usluga.Usluga.name}}" class="form-check-label">
+                    {{usluga.Usluga.name}} - {{usluga.Usluga.price}}din
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <label for="additionalRequests">Dodatni zahtevi:</label>
+            <textarea id="additionalRequests" class="form-control" [(ngModel)]="renovation.text"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="jsonInput">Upload JSON:</label>
+            <input type="file" id="jsonInput" class="form-control-file" (change)="jsonInput($event)">
+          </div>
+        
+          <div class="d-flex flex-column align-items-center">
+            <canvas id="garden" width="700" height="400" class="border border-dark"></canvas>
+          </div>
+          <button class="btn btn-primary" (click)="newRenovation()">Zakazi renoviranje</button>
+          <p class="text-danger mt-3">{{error}}</p>
+        </div>
+      
+        <div *ngIf="step == 3" class="mb-4">
+          <div class="form-group">
+            <label for="fountainCnt">Broj fontana:</label>
+            <input type="number" id="fountainCnt" class="form-control" [(ngModel)]="renovation.fountainCnt">
+          </div>
+          <div class="form-group">
+            <label for="fountainArea">Povrsina pod fontanom[m²]:</label>
+            <input type="number" id="fountainArea" class="form-control" [(ngModel)]="renovation.fountainArea">
+          </div>
+          <div class="form-group">
+            <label for="greenArea">Povrsina pod zelenilom[m²]:</label>
+            <input type="number" id="greenArea" class="form-control" [(ngModel)]="renovation.greenArea">
+          </div>
+          <div class="form-group">
+            <label for="tables">Broj stolova:</label>
+            <input type="number" id="tables" class="form-control" [(ngModel)]="renovation.tables">
+          </div>
+          <div class="form-group">
+            <label for="chairs">Broj stolica:</label>
+            <input type="number" id="chairs" class="form-control" [(ngModel)]="renovation.chairs">
+          </div>
+          <div class="form-group">
+            <label>Usluge:</label>
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let usluga of usluge">
+                <div class="form-check">
+                  <input type="checkbox" id="usluga{{usluga.Usluga.name}}" class="form-check-input" [(ngModel)]="usluga.boolean">
+                  <label for="usluga{{usluga.Usluga.name}}" class="form-check-label">
+                    {{usluga.Usluga.name}} - {{usluga.Usluga.price}}din
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <label for="additionalRequests">Dodatni zahtevi:</label>
+            <textarea id="additionalRequests" class="form-control" [(ngModel)]="renovation.text"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="jsonInput">Upload JSON:</label>
+            <input type="file" id="jsonInput" class="form-control-file" (change)="jsonInput($event)">
+          </div>
+        
+          <div class="d-flex flex-column align-items-center">
+            <canvas id="garden" width="700" height="400" class="border border-dark"></canvas>
+          </div>
+          <button class="btn btn-primary" (click)="newRenovation()">Zakazi renoviranje</button>
+          <p class="text-danger mt-3">{{error}}</p>
+        </div>
+      </div>

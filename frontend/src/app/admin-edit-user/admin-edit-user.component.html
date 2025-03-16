@@ -1,0 +1,80 @@
+<div class="container mt-5">
+    <h2 class="text-center">Azuriranje korisnika</h2>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Ime:</label>
+        <input type="text" id="firstname" class="form-control" [(ngModel)]="user.firstname" name="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Prezime:</label>
+        <input type="text" id="lastname" class="form-control" [(ngModel)]="user.lastname" name="lastname">
+      </div>
+      <div class="form-group">
+        <label>Pol:</label><br>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="genderM" class="form-check-input" name="gender" value="M" [(ngModel)]="user.gender">
+          <label for="genderM" class="form-check-label">M</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="genderZ" class="form-check-input" name="gender" value="Z" [(ngModel)]="user.gender">
+          <label for="genderZ" class="form-check-label">Z</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="username">Korisnicko ime:</label>
+        <input type="text" id="username" class="form-control" [(ngModel)]="user.username" name="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" class="form-control" [(ngModel)]="user.password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" class="form-control" [(ngModel)]="user.phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" class="form-control" [(ngModel)]="user.email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="address">Adresa:</label>
+        <input type="text" id="address" class="form-control" [(ngModel)]="user.address" name="address">
+      </div>
+      <div class="form-group">
+        <label for="card">Kartica:</label>
+        <input type="text" id="card" class="form-control" [(ngModel)]="user.card" name="card">
+      </div>
+      <div class="form-group">
+        <label>Tip:</label><br>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="typeDecorator" class="form-check-input" name="type" value="decorator" [(ngModel)]="user.type">
+          <label for="typeDecorator" class="form-check-label">Dekorater</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="typeOwner" class="form-check-input" name="type" value="owner" [(ngModel)]="user.type">
+          <label for="typeOwner" class="form-check-label">Vlasnik</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Status profila:</label><br>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="statusActive" class="form-check-input" name="status" value="active" [(ngModel)]="user.state">
+          <label for="statusActive" class="form-check-label">Aktivan</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="statusWaiting" class="form-check-input" name="status" value="waiting" [(ngModel)]="user.state">
+          <label for="statusWaiting" class="form-check-label">Na cekanje</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="statusDeclined" class="form-check-input" name="status" value="declined" [(ngModel)]="user.state">
+          <label for="statusDeclined" class="form-check-label">Blokiran</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="profilePicture">Profilna slika:</label>
+        <input type="file" id="profilePicture" class="form-control-file" (change)="onFileSelected($event)" name="profilePicture">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="update()">Azuriraj</button>
+      <p class="text-danger mt-3">{{error}}</p>
+    </form>
+  </div>

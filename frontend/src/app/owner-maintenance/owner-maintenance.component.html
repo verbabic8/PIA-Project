@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between mb-3">
+    <h1 class="text-center flex-grow-1">Zakazana odrzavanja</h1>
+    <div>
+      <b><a href="http://localhost:4200/ownerMeni" class="btn btn-link">Meni</a></b>
+    </div>
+  </div>
+  <h3 class="mb-3">Zavrsena renoviranja</h3>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Datum zavrsetka posla</th>
+        <th>Broj vodenih povrsina</th>
+        <th>Zakazi odrzavanje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let renovation of finishedRenovations">
+        <td>{{ renovation.finishDate | date: 'dd.MM.yyyy HH:mm'}}</td>
+        <td>{{ renovation.type === 'private' ? renovation.poolCnt : renovation.fountainCnt }}</td>
+        <td *ngIf="testDate(renovation.finishDate, renovation.lastVisit)">
+          <button class="btn btn-primary btn-sm" (click)="makeAppo(renovation)">Zakazi</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="text-danger mt-3">{{error}}</p>
+  
+  <h3 class="mb-3">Na cekanju za odrzavanje</h3>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Zaduzena firma</th>
+        <th>Tip baste</th>
+        <th>Povrsina prostora [m²]</th>
+        <th>Broj vodenih povrsina</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let odrzavanje of waitingAppointments">
+        <td>{{ odrzavanje.firm }}</td>
+        <td>{{ odrzavanje.type === 'private' ? 'Privatna' : 'Restoranska'}}</td>
+        <td>{{ odrzavanje.area }}</td>
+        <td>{{ odrzavanje.type === 'private' ? odrzavanje.poolCnt : odrzavanje.fountainCnt}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "66f0041a4b93b41b7a1d9576"
+  },
+  "done": false,
+  "now": {
+    "$date": "2024-09-22T11:48:42.079Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T11:38:06.775Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T11:38:06.775Z"
+  },
+  "area": 200,
+  "type": "restaurant",
+  "text": "",
+  "firm": "Firma 1",
+  "username": "gaja",
+  "decorator": "",
+  "poolCnt": 0,
+  "fountainCnt": 2,
+  "status": "accepted",
+  "timeToFinish": {
+    "$date": "2024-09-25T11:53:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f0042f4b93b41b7a1d9589"
+  },
+  "done": false,
+  "now": {
+    "$date": "2024-09-22T11:49:03.759Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T11:39:57.722Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T11:39:57.722Z"
+  },
+  "area": 150,
+  "type": "private",
+  "text": "",
+  "firm": "Firma 3",
+  "username": "joca",
+  "decorator": "",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "timeToFinish": {
+    "$date": "2024-09-22T11:49:02.469Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f042485d946e03960f68d1"
+  },
+  "done": false,
+  "now": {
+    "$date": "2023-09-22T16:14:00.870Z"
+  },
+  "finishDate": {
+    "$date": "2023-09-22T15:42:40.210Z"
+  },
+  "lastVisit": {
+    "$date": "2023-09-22T15:42:40.210Z"
+  },
+  "area": 100,
+  "type": "private",
+  "text": "",
+  "firm": "Firma 3",
+  "username": "andja",
+  "decorator": "daca",
+  "poolCnt": 1,
+  "fountainCnt": 0,
+  "status": "waiting",
+  "timeToFinish": {
+    "$date": "2024-09-22T16:13:57.094Z"
+  },
+  "__v": 0
+}]

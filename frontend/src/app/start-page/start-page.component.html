@@ -1,0 +1,69 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-end mb-3">
+    <b><a href="http://localhost:4200/register" class="btn btn-link">Register</a></b>
+    <b><a href="http://localhost:4200/login" class="btn btn-link">Login</a></b>
+  </div>
+  <h1 class="text-center mb-4">Home page</h1>
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <p><b>Broj dekorisanih basta:</b> {{gardenCount}}</p>
+    </div>
+    <div class="col-md-4">
+      <p><b>Broj registrovanih vlasnika:</b> {{ownerCount}}</p>
+    </div>
+    <div class="col-md-4">
+      <p><b>Broj registrovanih dekoratera:</b> {{decoratorCount}}</p>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <b>Broj zakazanih poslova-></b>
+    </div>
+    <div class="col-md-4">
+      <p><b>Poslednjih 24h:</b> {{jobCount24}}</p>
+    </div>
+    <div class="col-md-4">
+      <p><b>Poslednjih 7d:</b> {{jobCount7}}</p>
+    </div>
+    <div class="col-md-4">
+      <p><b>Poslednjih 30d:</b> {{jobCount30}}</p>
+    </div>
+  </div>
+  <h3 class="mb-3">Firme registrovane u sistem:</h3>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>
+          <div class="d-flex align-items-center">
+            <span>Naziv</span>
+            <button class="btn btn-link p-0 ml-2" (click)="sortNameUp()">↑</button>
+            <button class="btn btn-link p-0 ml-1" (click)="sortNameDown()">↓</button>
+            <input type="text" class="form-control ml-2" [(ngModel)]="searchName" placeholder="Pretraga naziva">
+          </div>
+        </th>
+        <th>
+          <div class="d-flex align-items-center">
+            <span>Adresa</span>
+            <button class="btn btn-link p-0 ml-2" (click)="sortAddressUp()">↑</button>
+            <button class="btn btn-link p-0 ml-1" (click)="sortAddressDown()">↓</button>
+            <input type="text" class="form-control ml-2" [(ngModel)]="searchAddress" placeholder="Pretraga adrese">
+          </div>
+        </th>
+        <th>Zaposleni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let firm of firms | filtrer: 'name' : searchName | filtrer: 'address' : searchAddress">
+        <td>{{ firm.name }}</td>
+        <td>{{ firm.address }}</td>
+        <td>
+          <ul class="list-unstyled mb-0">
+            <li *ngFor="let worker of firm.decorators">
+              {{ worker.firstname }} {{ worker.lastname }}
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
